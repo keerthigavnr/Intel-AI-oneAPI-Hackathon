@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+  </head>
+  <body>
+    <h1>Prediction: {{ prediction }}</h1>
+    <p>{{ abuse_details.description }}</p>
+    <ul>
+      {% for link in abuse_details.links %}
+      <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

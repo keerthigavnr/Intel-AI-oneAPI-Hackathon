@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Support for Domestic Abuse</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        background: url("./SASTRA-4.jpeg");
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 2em auto;
+        padding: 1em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #userInput {
+        width: 100%;
+        padding: 1em;
+        margin-bottom: 1em;
+        box-sizing: border-box;
+      }
+
+      #submitBtn {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        margin-top: 25px;
+        padding: 0.5em 1em;
+        font-size: 1em;
+        cursor: pointer;
+      }
+
+      #submitBtn:hover {
+        color: #ffd700;
+      }
+
+      #infoSection {
+        text-align: center;
+        padding: 1em;
+        background-color: #007bff;
+        color: #fff;
+        font-weight: 700;
+      }
+
+      #awarenessQuotes {
+        margin-top: 2em;
+        text-align: center;
+        font-weight: 800;
+        background-color: #ffd700;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 15px;
+      }
+
+      #quote {
+        font-style: italic;
+      }
+
+      #picturesSection {
+        margin-top: 2em;
+        font-weight: 700;
+        /* text-align: center; */
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>AI Support for Domestic Abuse</h1>
+    </header>
+
+    <main>
+      <div id="infoSection">
+        <h2>About Domestic Abuse</h2>
+        <p>
+          Domestic abuse includes any attempt by one person in a marriage or
+          intimate relationship to dominate and control the other. It extends
+          beyond partner relationships and can also be perpetrated by parents.
+        </p>
+        <p>
+          These behaviors can manifest in various forms, including physical,
+          emotional, economic, and psychological abuse. Lack of knowledge about
+          domestic abuse can create confusion, making it challenging for
+          individuals to understand and recognize the signs. This platform aims
+          to provide information, support, and resources to empower individuals
+          to navigate through these challenging situations.
+        </p>
+
+        <div
+          id="wisdomQuote"
+          style="
+            background-color: #ffd700;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+          "
+        >
+          <p
+            style="
+              font-style: italic;
+              font-weight: 800;
+              text-align: center;
+              color: #333;
+            "
+          >
+            "Violence cannot be stopped by violence, it has to be stopped by
+            wisdom. Only wisdom can stop violence."
+          </p>
+        </div>
+      </div>
+      <div id="userInput">
+        <h2 style="color: #007bff">Share what you're going through</h2>
+        <p style="font-weight: 700">
+          If you're ready to share what you're feeling or going through, we're
+          here to listen and provide support.
+        </p>
+        <form action="/predict" method="post">
+          <textarea
+            name="user_input"
+            rows="4"
+            style="width: 80%"
+            placeholder="Type your thoughts here"
+          ></textarea>
+          <br />
+          <button id="submitBtn" type="submit" style="border-radius: 10px">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div id="awarenessQuotes">
+        <p id="quote">"Your voice matters. Speak up against domestic abuse."</p>
+      </div>
+
+      <div id="picturesSection">
+        <h2 style="color: #007bff">
+          Signs You May Be Experiencing Domestic Abuse
+        </h2>
+        <ul>
+          <li>Obvious or hidden cuts and bruises</li>
+          <li>Behaving apprehensively in the presence of a partner</li>
+          <li>
+            Routinely making excuses for a partner’s behavior in public or
+            towards loved ones
+          </li>
+          <li>Having limited control over finances</li>
+          <li>Meeting fewer times with family members and loved ones</li>
+          <li>
+            Living in constant fear: of saying the wrong thing, contradicting a
+            partner, or refusing sex
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
